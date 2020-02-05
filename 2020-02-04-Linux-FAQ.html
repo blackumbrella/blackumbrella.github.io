@@ -6,17 +6,23 @@
     
 
     
-    <title>Archive | Sprial Up Life</title>
+    <title>Sprial Up Life</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta property="og:type" content="website">
+        <meta name="keywords" content="" />
+    
+    <meta name="description" content="Bash change bash prompt color 1# export PS1=&quot;\e[0;36m[\u@\h \W]\$ \e[m &quot; 36 is Cyan color.   Network ‘ifconfig or ip Command Not Found’ 1# yum install -y iproute">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Sprial Up Life">
-<meta property="og:url" content="http://blackumbrella.github.io/archives/index.html">
+<meta property="og:url" content="http://blackumbrella.github.io/2020-02-04-Linux-FAQ.html">
 <meta property="og:site_name" content="Sprial Up Life">
+<meta property="og:description" content="Bash change bash prompt color 1# export PS1=&quot;\e[0;36m[\u@\h \W]\$ \e[m &quot; 36 is Cyan color.   Network ‘ifconfig or ip Command Not Found’ 1# yum install -y iproute">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-07-12T10:05:02.487Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Sprial Up Life">
+<meta name="twitter:description" content="Bash change bash prompt color 1# export PS1=&quot;\e[0;36m[\u@\h \W]\$ \e[m &quot; 36 is Cyan color.   Network ‘ifconfig or ip Command Not Found’ 1# yum install -y iproute">
     
 
     
@@ -125,245 +131,118 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-archive"></i>Archive
+    uncategorized
     </h1>
 </div>
                         <div class="main-body-content">
-                            
+                            <article id="post-Linux-FAQ" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2020-02-04-Linux-FAQ.html" class="article-date">
+            <time datetime="2020-02-04T22:25:28.333Z" itemprop="datePublished">2020-02-04</time>
+        </a>
+    </div>
 
-    
-    
-        
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2020" class="archive-year"><i class="icon fa fa-calendar-o"></i>2020</a>
+                
             </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
         
-        <a href="/2020-02-04-Linux-FAQ.html" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
         
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://blackumbrella.github.io/2020-02-04-Linux-FAQ.html">0</span>
-    
-</span>
+        <div class="article-entry" itemprop="articleBody">
+            <h2 id="Bash"><a href="#Bash" class="headerlink" title="Bash"></a>Bash</h2><ul>
+<li><p>change bash prompt color</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># export PS1="\e[0;36m[\u@\h \W]\$ \e[m "</span></span><br></pre></td></tr></table></figure>
+<p><code>36</code> is <span style="color:blue">Cyan</span> color.</p>
+</li>
+</ul>
+<h2 id="Network"><a href="#Network" class="headerlink" title="Network"></a>Network</h2><ul>
+<li><p>‘ifconfig or ip Command Not Found’</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># yum install -y iproute</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
 
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
+        </div>
+        <footer class="article-footer">
             
-            </div>
-            <div class="date"><time datetime="2020-02-04T22:25:28.333Z" itemprop="datePublished">2020-02-04</time></div>
-        </div>
-        
-        <p class="article-excerpt">
-            Bash
-change bash prompt color
-1# export PS1="\e[0;36m[\u@\h \W]\$ \e[m "
-36 is Cyan color.
-
-
-Network
-‘ifconfig or ip Command Not Found’
-1# yum install -y iproute
 
 
 
-        </p>
+    <a data-url="http://blackumbrella.github.io/2020-02-04-Linux-FAQ.html" data-id="ck68x0wvf0002mgh5lut9kkse" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
     </div>
 </article>
-    
 
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2020-02-04-Gitbook-tool-Chinese-font-in-PDF.html" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
+    <section id="comments">
     
         
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://blackumbrella.github.io/2020-02-04-Gitbook-tool-Chinese-font-in-PDF.html">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            
-            </div>
-            <div class="date"><time datetime="2020-02-04T17:35:57.000Z" itemprop="datePublished">2020-02-04</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2020-02-04-Gitbook-tool-Chinese-font-in-PDF.html">Gitbook生成PDF字体不正确的问题及解决方案</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            采用gitbook pdf转换中文markdown 文件到PDF时发现部分字符加粗显示，部分显示正常，但是无法辨识正确的系统字体。最终发现解决办法为：
-
-增加book.json文件到文件夹的根目录（可参考默认文件作为模板）
-增加以下element到json文件：
- 123456789101112"pdf": &#123;  "pageNumbers": true,  "fontSize": 12,
-        </p>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
-</article>
-    
-        </div>
-    
 
     
-    
-        
-            </div></section>
-        
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2014" class="archive-year"><i class="icon fa fa-calendar-o"></i>2014</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2014-02-13-Font-How-to-make-logo-with-some-special-chinese-fonts.html" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://blackumbrella.github.io/2014-02-13-Font-How-to-make-logo-with-some-special-chinese-fonts.html">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Daily-Work/">Daily Work</a>
-            </div>
-            <div class="date"><time datetime="2014-02-13T09:42:42.000Z" itemprop="datePublished">2014-02-13</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2014-02-13-Font-How-to-make-logo-with-some-special-chinese-fonts.html">Font-How to make logo with some special chinese fonts.</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            工作电脑是纯英文系统，无法安装中文字体，需要中文的时候就悲催了，尤其是需要制作包含中文的图片时那叫一个纠结，不过终于发现有个网站可以在线生成各种字体并显示了。
-有兴趣的同学可以试着访问天空字体。简而言之两个功能让我非常满意：
-
-超多的字体库
-
-号称拥有986种字体，包括一些比较少见或比较脑残的字体。仁者见仁智者见智了，不过按我的经验大家尽量使用经典字体，已经够用了。
-
-透明图片输出
-
-众所周知的秘
-        </p>
-    </div>
-</article>
-    
-
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2014-02-03-multiple-git-accounts-for-multiple-repos.html" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://blackumbrella.github.io/2014-02-03-multiple-git-accounts-for-multiple-repos.html">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Git/">Git</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Git/Linux/">Linux</a>
-            </div>
-            <div class="date"><time datetime="2014-02-03T06:40:12.000Z" itemprop="datePublished">2014-02-03</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2014-02-03-multiple-git-accounts-for-multiple-repos.html">Git-How to set multiple accounts for different git repository</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            Question
-I have a github account for my personal projects and blogs. Meanwhile my company is also using git, but I just have one laptop. I shall be able to access both of them from my laptop.
-Solution
-        </p>
-    </div>
-</article>
-    
-        </div>
-    
-
-
-    </div></section>
-
+    </section>
 
 
                         </div>
@@ -424,6 +303,19 @@ Solution
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2020-02-04-Gitbook-tool-Chinese-font-in-PDF.html" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">Gitbook生成PDF字体不正确的问题及解决方案</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
@@ -612,11 +504,13 @@ Solution
     var disqus_shortname = 'hexo-theme-hueman';
     
     
+    var disqus_url = 'http://blackumbrella.github.io/2020-02-04-Linux-FAQ.html';
+    
     (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>

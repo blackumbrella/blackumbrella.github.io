@@ -6,17 +6,23 @@
     
 
     
-    <title>Archive | Sprial Up Life</title>
+    <title>Gitbook生成PDF字体不正确的问题及解决方案 | Sprial Up Life</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Sprial Up Life">
-<meta property="og:url" content="http://blackumbrella.github.io/archives/index.html">
+        <meta name="keywords" content="" />
+    
+    <meta name="description" content="采用gitbook pdf转换中文markdown 文件到PDF时发现部分字符加粗显示，部分显示正常，但是无法辨识正确的系统字体。最终发现解决办法为：  增加book.json文件到文件夹的根目录（可参考默认文件作为模板） 增加以下element到json文件：  123456789101112&quot;pdf&quot;: &amp;#123;  &quot;pageNumbers&quot;: true,  &quot;fontSize&quot;: 12,">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Gitbook生成PDF字体不正确的问题及解决方案">
+<meta property="og:url" content="http://blackumbrella.github.io/2020-02-04-Gitbook-tool-Chinese-font-in-PDF.html">
 <meta property="og:site_name" content="Sprial Up Life">
+<meta property="og:description" content="采用gitbook pdf转换中文markdown 文件到PDF时发现部分字符加粗显示，部分显示正常，但是无法辨识正确的系统字体。最终发现解决办法为：  增加book.json文件到文件夹的根目录（可参考默认文件作为模板） 增加以下element到json文件：  123456789101112&quot;pdf&quot;: &amp;#123;  &quot;pageNumbers&quot;: true,  &quot;fontSize&quot;: 12,">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2020-02-05T06:17:22.208Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Sprial Up Life">
+<meta name="twitter:title" content="Gitbook生成PDF字体不正确的问题及解决方案">
+<meta name="twitter:description" content="采用gitbook pdf转换中文markdown 文件到PDF时发现部分字符加粗显示，部分显示正常，但是无法辨识正确的系统字体。最终发现解决办法为：  增加book.json文件到文件夹的根目录（可参考默认文件作为模板） 增加以下element到json文件：  123456789101112&quot;pdf&quot;: &amp;#123;  &quot;pageNumbers&quot;: true,  &quot;fontSize&quot;: 12,">
     
 
     
@@ -125,245 +131,127 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-archive"></i>Archive
+    uncategorized
     </h1>
 </div>
                         <div class="main-body-content">
-                            
+                            <article id="post-Gitbook-tool-Chinese-font-in-PDF" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        Gitbook生成PDF字体不正确的问题及解决方案
+        </h1>
+    
 
-    
-    
+            </header>
         
         
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2020" class="archive-year"><i class="icon fa fa-calendar-o"></i>2020</a>
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2020-02-04-Gitbook-tool-Chinese-font-in-PDF.html" class="article-date">
+            <time datetime="2020-02-04T17:35:57.000Z" itemprop="datePublished">2020-02-04</time>
+        </a>
+    </div>
+
+                
             </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
         
-        <a href="/2020-02-04-Linux-FAQ.html" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
         
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://blackumbrella.github.io/2020-02-04-Linux-FAQ.html">0</span>
-    
-</span>
+        <div class="article-entry" itemprop="articleBody">
+            <p>采用gitbook pdf转换中文markdown 文件到PDF时发现部分字符加粗显示，部分显示正常，但是无法辨识正确的系统字体。<br>最终发现解决办法为：</p>
+<ol>
+<li>增加book.json文件到文件夹的根目录（可参考默认文件作为模板）</li>
+<li><p>增加以下element到json文件：</p>
+ <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"pdf"</span>: &#123;</span><br><span class="line">  <span class="string">"pageNumbers"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="string">"fontSize"</span>: <span class="number">12</span>,</span><br><span class="line">  <span class="string">"paperSize"</span>: <span class="string">"a4"</span>,</span><br><span class="line">  <span class="string">"fontFamily"</span>:<span class="string">"Microsoft YaHei"</span>,</span><br><span class="line">  <span class="string">"margin"</span>: &#123;</span><br><span class="line">    <span class="string">"right"</span>: <span class="number">30</span>,</span><br><span class="line">    <span class="string">"left"</span>: <span class="number">30</span>,</span><br><span class="line">    <span class="string">"top"</span>: <span class="number">30</span>,</span><br><span class="line">    <span class="string">"bottom"</span>: <span class="number">50</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中fontFamily最为重要，同样的中文字体，例如雅黑，fontFamily可以是 <code>Microsoft YaHei</code>,也可以是中文的<code>微软雅黑</code>。推荐采用英文。</p>
+</li>
+<li><p>执行 <code>gitbook pdf . ./target.pdf</code></p>
+</li>
+</ol>
 
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
+        </div>
+        <footer class="article-footer">
             
-            </div>
-            <div class="date"><time datetime="2020-02-04T22:25:28.333Z" itemprop="datePublished">2020-02-04</time></div>
-        </div>
-        
-        <p class="article-excerpt">
-            Bash
-change bash prompt color
-1# export PS1="\e[0;36m[\u@\h \W]\$ \e[m "
-36 is Cyan color.
-
-
-Network
-‘ifconfig or ip Command Not Found’
-1# yum install -y iproute
 
 
 
-        </p>
+    <a data-url="http://blackumbrella.github.io/2020-02-04-Gitbook-tool-Chinese-font-in-PDF.html" data-id="ck68x0wv30000mgh5z3vfmdty" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
     </div>
 </article>
-    
 
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2020-02-04-Gitbook-tool-Chinese-font-in-PDF.html" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
+    <section id="comments">
     
         
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://blackumbrella.github.io/2020-02-04-Gitbook-tool-Chinese-font-in-PDF.html">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            
-            </div>
-            <div class="date"><time datetime="2020-02-04T17:35:57.000Z" itemprop="datePublished">2020-02-04</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2020-02-04-Gitbook-tool-Chinese-font-in-PDF.html">Gitbook生成PDF字体不正确的问题及解决方案</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            采用gitbook pdf转换中文markdown 文件到PDF时发现部分字符加粗显示，部分显示正常，但是无法辨识正确的系统字体。最终发现解决办法为：
-
-增加book.json文件到文件夹的根目录（可参考默认文件作为模板）
-增加以下element到json文件：
- 123456789101112"pdf": &#123;  "pageNumbers": true,  "fontSize": 12,
-        </p>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
-</article>
-    
-        </div>
-    
 
     
-    
-        
-            </div></section>
-        
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2014" class="archive-year"><i class="icon fa fa-calendar-o"></i>2014</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2014-02-13-Font-How-to-make-logo-with-some-special-chinese-fonts.html" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://blackumbrella.github.io/2014-02-13-Font-How-to-make-logo-with-some-special-chinese-fonts.html">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Daily-Work/">Daily Work</a>
-            </div>
-            <div class="date"><time datetime="2014-02-13T09:42:42.000Z" itemprop="datePublished">2014-02-13</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2014-02-13-Font-How-to-make-logo-with-some-special-chinese-fonts.html">Font-How to make logo with some special chinese fonts.</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            工作电脑是纯英文系统，无法安装中文字体，需要中文的时候就悲催了，尤其是需要制作包含中文的图片时那叫一个纠结，不过终于发现有个网站可以在线生成各种字体并显示了。
-有兴趣的同学可以试着访问天空字体。简而言之两个功能让我非常满意：
-
-超多的字体库
-
-号称拥有986种字体，包括一些比较少见或比较脑残的字体。仁者见仁智者见智了，不过按我的经验大家尽量使用经典字体，已经够用了。
-
-透明图片输出
-
-众所周知的秘
-        </p>
-    </div>
-</article>
-    
-
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2014-02-03-multiple-git-accounts-for-multiple-repos.html" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://blackumbrella.github.io/2014-02-03-multiple-git-accounts-for-multiple-repos.html">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Git/">Git</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Git/Linux/">Linux</a>
-            </div>
-            <div class="date"><time datetime="2014-02-03T06:40:12.000Z" itemprop="datePublished">2014-02-03</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2014-02-03-multiple-git-accounts-for-multiple-repos.html">Git-How to set multiple accounts for different git repository</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            Question
-I have a github account for my personal projects and blogs. Meanwhile my company is also using git, but I just have one laptop. I shall be able to access both of them from my laptop.
-Solution
-        </p>
-    </div>
-</article>
-    
-        </div>
-    
-
-
-    </div></section>
-
+    </section>
 
 
                         </div>
@@ -424,6 +312,29 @@ Solution
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2020-02-04-Linux-FAQ.html" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            (no title)
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2014-02-13-Font-How-to-make-logo-with-some-special-chinese-fonts.html" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">Font-How to make logo with some special chinese fonts.</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
@@ -612,11 +523,13 @@ Solution
     var disqus_shortname = 'hexo-theme-hueman';
     
     
+    var disqus_url = 'http://blackumbrella.github.io/2020-02-04-Gitbook-tool-Chinese-font-in-PDF.html';
+    
     (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>
