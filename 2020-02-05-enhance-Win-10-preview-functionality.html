@@ -5,15 +5,20 @@
   
 
   
-  <title>Tag: Git | Sprial Up Life</title>
+  <title>enhance Win 10 preview functionality | Sprial Up Life</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Sprial Up Life">
-<meta property="og:url" content="http://blackumbrella.github.io/tags/Git/index.html">
+  <meta name="description" content="To facilitate document content review, I opened Preview Pane in file explorer, but unfortuately, some regular document types for me cannot be recognized by Window. E.g. some source code files, such as">
+<meta name="keywords" content="Win, IT">
+<meta property="og:type" content="article">
+<meta property="og:title" content="enhance Win 10 preview functionality">
+<meta property="og:url" content="http://blackumbrella.github.io/2020-02-05-enhance-Win-10-preview-functionality.html">
 <meta property="og:site_name" content="Sprial Up Life">
+<meta property="og:description" content="To facilitate document content review, I opened Preview Pane in file explorer, but unfortuately, some regular document types for me cannot be recognized by Window. E.g. some source code files, such as">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2020-02-05T15:38:17.883Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Sprial Up Life">
+<meta name="twitter:title" content="enhance Win 10 preview functionality">
+<meta name="twitter:description" content="To facilitate document content review, I opened Preview Pane in file explorer, but unfortuately, some regular document types for me cannot be recognized by Window. E.g. some source code files, such as">
   
     <link rel="alternate" href="/atom.xml" title="Sprial Up Life" type="application/atom+xml">
   
@@ -60,40 +65,75 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2014" class="archive-year">2014</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2014-02-03-multiple-git-accounts-for-multiple-repos.html" class="archive-article-date">
-  <time datetime="2014-02-03T06:40:12.000Z" itemprop="datePublished">Feb 3</time>
+        <section id="main"><article id="post-enhance-Win-10-preview-functionality" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020-02-05-enhance-Win-10-preview-functionality.html" class="article-date">
+  <time datetime="2020-02-05T10:27:18.000Z" itemprop="datePublished">2020-02-05</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2014-02-03-multiple-git-accounts-for-multiple-repos.html">Git-How to set multiple accounts for different git repository</a>
+    <h1 class="article-title" itemprop="name">
+      enhance Win 10 preview functionality
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>To facilitate document content review, I opened Preview Pane in file explorer, but unfortuately, some regular document types for me cannot be recognized by Window. E.g. some source code files, such as <code>json</code>, <code>py</code>,etc. will get a blank preview window. </p>
+<p>To solve this problem, we should understand the concept: [Perceived Type|<a href="https://docs.microsoft.com/en-us/previous-versions/windows/desktop/legacy/cc144150(v=vs.85)?redirectedfrom=MSDN]" target="_blank" rel="noopener">https://docs.microsoft.com/en-us/previous-versions/windows/desktop/legacy/cc144150(v=vs.85)?redirectedfrom=MSDN]</a>, and then we can solve this issue manually.</p>
+<p>So far, Windows support below PerceivedType:</p>
+<ul>
+<li>Folder</li>
+<li>Text</li>
+<li>Image</li>
+<li>Audio</li>
+<li>Video</li>
+<li>Compressed</li>
+<li>Document</li>
+<li>System</li>
+<li>Application</li>
+<li>Gamemedia</li>
+<li>Contacts</li>
+</ul>
+<ol>
+<li>Open regeditor and open the root element: <code>HKEY_CLASSES_ROOT</code>. You can find the file extension name as a “folder” icon.</li>
+<li>find the extension name you want to change, such as <code>.json</code>, and open it.</li>
+<li>Add a new string key under it. The key name must be “PerceivedType” and the value can be any value in above enumeration. To preview the file as text, you can use “Text”.</li>
+</ol>
+<p>Then you can preview your plain text file in Preview pane. </p>
 
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blackumbrella.github.io/2020-02-05-enhance-Win-10-preview-functionality.html" data-id="ck69h898z0003hsh509zbfn5u" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Win-IT/">Win, IT</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020-02-04-Linux-FAQ.html" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
 
 </section>
         
